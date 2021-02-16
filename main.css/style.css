@@ -4,19 +4,49 @@
 	box-sizing: border-box;
 }
 
-.sneaker {
-	height: 100vh;
-	width: 100vw;
+body {
+	font-family: "Rubik Mono One", sans-serif;
 }
 
-.sneaker .blue {
+.sneaker {
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+}
+
+.sneaker img {
+	width: 800px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+}
+
+.sneaker .desc {
+	width: 750px;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 48px;
+}
+
+.sneaker.white .desc {
+	color: #fff;
+}
+
+.sneaker.blue .desc {
+	color: yellow;
+}
+.sneaker.blue {
 	background-color: #189;
 }
 
-.sneaker .blue {
+.sneaker.white {
 	background-color: #152;
 }
 
-.sneaker .blue {
+.sneaker.converse {
 	background-color: #517;
 }
