@@ -4,9 +4,60 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Rubik Mono One", sans-serif;
 }
+
+/* navigation */
+
+.options {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	z-index: 10;
+}
+
+.options li {
+	list-style: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
+.options li a {
+	text-decoration: none;
+	max-height: 100%;
+}
+
+.options li a img:hover {
+	display: inline-block;
+	transition-duration: 0.3s;
+	transition-property: transform;
+	transition-timing-function: ease-out;
+}
+
+.options li a img:hover,
+.options li a img:focus,
+.options li a img:active {
+	transform: translateY(-8px);
+}
+
+.options li a img {
+	width: 100px;
+}
+
+.options li a .hilfiger {
+	width: 70px;
+}
+
+.options li a .converse {
+	width: 50px;
+}
+/* sneakers */
 
 .sneaker {
 	position: relative;
